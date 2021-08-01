@@ -14,7 +14,7 @@ we set a seed for reproducibility:
 >>> from transformers import pipeline, set_seed
 >>> generator = pipeline('text-generation', model='Galuh/id-journal-gpt2')
 >>> set_seed(42)
->>> generator("Sewindu sudah kita tak berjumpa,", max_length=30, num_return_sequences=5)
+>>> generator("Penelitian ini menggunakan teknik DNA barcoding untuk", max_length=30, num_return_sequences=5)
 
 [{'generated_text': 'Penelitian ini menggunakan teknik DNA barcoding untuk mendeteksi perubahan genetik bakteri pada udang windu. Empat tahap telah dilakukan, meliputi preparasi media untuk larva,'},
  {'generated_text': 'Penelitian ini menggunakan teknik DNA barcoding untuk identifikasi gen pengasil flavonoid.  Data yang diperoleh dari hasil PCR diidentifikasi dengan teknik sekuensing'},

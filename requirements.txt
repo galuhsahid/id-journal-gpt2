@@ -1,0 +1,6 @@
+tensorflow
+tensorboard
+-f https://storage.googleapis.com/jax-releases/libtpu_releases.html
+jax[tpu]>=0.2.16
+optax
+git+https://github.com/huggingface/transformers

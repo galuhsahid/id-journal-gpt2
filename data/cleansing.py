@@ -23,7 +23,7 @@ def erase(file_name: str, write_to: str, start_key: str="first_line", stop_key: 
                         break
             if len(result_lines)>0:
                 result = (' '.join(result_lines)) 
-                result = "<BOS> " + result + " <EOS>"
+                result = result + " <|endoftext|>"
                 
                 with open(write_to, 'a') as f1:
                     f1.write(result + "\n")

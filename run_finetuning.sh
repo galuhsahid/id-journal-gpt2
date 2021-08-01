@@ -4,7 +4,7 @@ export VAL_DATA="data/val.txt"
 export BASE_MODEL_NAME="flax-community/gpt2-small-indonesian"
 
 python run_clm_flax.py \
-    --num_train_epochs=5 \
+    --num_train_epochs="8" \
     --output_dir="${MODEL_DIR}" \
     --model_name_or_path="${BASE_MODEL_NAME}" \
     --do_train \
